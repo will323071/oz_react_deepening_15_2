@@ -1,5 +1,4 @@
 import { RecoilRoot } from 'recoil';
-import Boards from './components/Boards';
 import Controller from './components/Controller';
 
 //1. zustand로 상태 관리 라이브러리를 변경해야 합니다.
@@ -7,7 +6,6 @@ import Controller from './components/Controller';
 
 function App() {
   return (
-    <RecoilRoot>
       <div className="flex flex-col h-screen">
         <header className="w-full h-[80px] bg-slate-800 flex flex-col items-center justify-center text-stone-100">
           <p className="text-lg font-semibold">Kanban Board Project</p>
@@ -25,7 +23,6 @@ function App() {
           <p>&copy; OZ-CodingSchool</p>
         </footer>
       </div>
-    </RecoilRoot>
   );
 }
 
